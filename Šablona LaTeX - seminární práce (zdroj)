@@ -284,3 +284,44 @@ Vše je tedy snadno o řidiči dohledatelné a přehledné.
 
 
 \end{document}
+
+CREATE TABLE `person` (
+  `firstName` varchar(30) NOT NULL,
+  `middleName` varchar(30) NOT NULL,
+  `lastName` varchar(50) NOT NULL,
+  `sex` int(2) NOT NULL,
+  `birthNum` int(12) NOT NULL,
+  `maritalStatus` varchar(10) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phoneNum` smallint(9) NOT NULL
+);
+
+
+ALTER TABLE `person`
+  ADD PRIMARY KEY (`birthNum`);
+
+CREATE TABLE `car` (
+  `carLicense` varchar(12) NOT NULL,
+  `carRegNum` varchar(7) NOT NULL,
+  `carBrand` varchar(50) NOT NULL,
+  `carType` varchar(50) NOT NULL,
+  `drivingSchool` varchar(255) NOT NULL,
+  `drivingLicenseType` enum('A','B','C','D','T') NOT NULL,
+  `points` int(2) NOT NULL
+);
+
+
+ALTER TABLE `car`
+  ADD PRIMARY KEY (`carLicense`);
+
+CREATE TABLE `address` (
+  `street` varchar(255) NOT NULL,
+  `descNum` smallint(10) NOT NULL,
+  `orientNum` smallint(10) NOT NULL,
+  `city` varchar(70) NOT NULL,
+  `cityDist` varchar(70) NOT NULL,
+  `zip` smallint(5) NOT NULL,
+  `floor` smallint(5) NOT NULL,
+  `apartment` smallint(5) NOT NULL,
+  `iso` enum('DE','BR','IT','JP','UK','VN','US','CS','CA','IS','IQ','UG','AD','GR') NOT NULL
+);

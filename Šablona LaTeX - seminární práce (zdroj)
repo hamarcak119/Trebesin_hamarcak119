@@ -175,6 +175,7 @@ License proprietární EULA
 \subsection{Custom enumerizace}
 \newpage
 \section{Databázová struktura}
+ Seminarka_2_odevzdani
 
 
 
@@ -183,6 +184,9 @@ License proprietární EULA
 \graphicspath{ {./obrazky/} }
 \includegraphics{sem_prace}
 
+=======
+\subsection{ER diagram}
+ main
 \subsection{Tabulka XXX}
 \subsubsection{Struktura}
 \subsubsection{Provázání tabulky}
@@ -194,6 +198,9 @@ License proprietární EULA
 \subsubsection{Provázání tabulky}
 
 
+Seminarka_2_odevzdani
 
 
+=======
+main
 \end{document}

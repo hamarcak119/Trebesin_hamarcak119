@@ -188,3 +188,99 @@ License proprietární EULA
 
 
 \end{document}
+
+\documentclass[12pt,a4paper,notitlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\begin{document}
+
+\title{Registr Řidičů}
+\author{ Jan Barnáš, Jonathan Musana, Matyáš Hamarčák }
+\date{22. 02. 2022}
+\maketitle
+
+\begin{abstract}
+Tento dokument byl vypracovaný společně se všemi členy týmu a ověřuje základní znalosti \LaTeX{}, databází a projektového řízení.
+
+Tým pracoval samostatně a využíval všechny dostupné materiály na Moodle nebo internetu. Veškeré licenční a právní náležitosti jsou upraveny v tomto dokumentu.
+
+Těm, který není tento dokument určen nemají žádné právo na využití obsahu tohoto dokumentu.
+
+Veškerá data osob a předmětů jsou smyšlená a nezakládají se na skutečnosti.
+
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+
+\section{Popis databáze}
+Registr řidičů Registr řidičů je evidence údajů o řidičích, jde o informační systém veřejné správy a jeho správcem je obecní úřad obce s rozšířenou působností. 
+
+Nadřazeným systémem je centrální registr řidičů, jehož správcem je ministerstvo dopravy.
+
+Evidence shromažďuje údaje o řidičích - osobní údaje řidičů,
+údaje o průkazech i těch mezinárodních, zajišťuje přehled o bodovém kontě řidičů a také spáchaných přestupků.
+
+Také se v této evidenci shromažďují veškeré spisy ohledně řidičů, zejména pak jejich žádosti a správní úkony. 
+Vše je tedy snadno o řidiči dohledatelné a přehledné.
+\newpage
+\section{Řidičské Průkazy a Požadavky}
+\subsection{Skupiny řidičského oprávnění}
+\subsection{Evidenční Karty}
+\subsection{Info. O Řidičích}
+\subsection{Vozidla}
+\newpage
+\section{Enumerizace hodnot}
+\subsection{kód ISO 3166}
+\subsection{Řidičské Průkazy}
+
+\begin{tabular} { |c|c|c|c|c| } 
+ \hline
+\hspace{+5em}A & B & C & D & T\\ 
+ \hline
+\end{tabular}
+
+\newpage
+\section{Databázová struktura}
+\subsection{ER diagram}
+\includegraphics[width=150mm]{pgmodel.png}
+\subsection{Tabulka person}
+\subsubsection{firstName}
+\subsubsection{lastName}
+\subsubsection{middleName}
+\subsubsection{sex}
+\subsubsection{birthNum}
+\subsubsection{maritalStatus}
+\subsubsection{email}
+\subsubsection{phoneNum}
+\subsubsection{Provázání tabulky: }
+\subsection{Tabulka car}
+\subsubsection{carLicense}
+\subsubsection{carRegNum}
+\subsubsection{carBrand}
+\subsubsection{carType}
+\subsubsection{drivingSchool}
+\subsubsection{drivingLicenseType}
+\subsubsection{points}
+\subsubsection{Provázání tabulky: }
+\newpage
+\subsection{Tabulka address}
+\subsubsection{street}
+\subsubsection{descNum}
+\subsubsection{orientNum}
+\subsubsection{city}
+\subsubsection{cityDist}
+\subsubsection{zip}
+\subsubsection{floor}
+\subsubsection{apartment}
+\subsubsection{iso}
+
+
+\end{document}
